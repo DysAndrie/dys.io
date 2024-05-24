@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+    - Website inspired with thanks to @codewithsadee
+ */
+
+  -->
+  <title>Dysfred Orbiso - Web Portfolio</title>
+  <meta name="description" content="This is a personal portfolio html inspired by codewithsadee">
+
+  <!-- 
+    - Icon
+  -->
+  <link rel="shortcut icon" href="assets\images\icon.png">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/dys.jpg">
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h2> Web Portfolio </h2>
+
+  <!-- 
+    -  <a href="index.html"><img src="assets\images\banner.png"></a>
+  -->
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="https://dysandrie.github.io/dys.resume/" class="navbar-link" target="_blank" rel="noopener noreferrer">Resume</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#connect" class="navbar-link">Connect</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Dysfred Orbiso</h1>
+
+            <p class="hero-subtitle">
+              Computing Science Undergraduate <br>
+              Aspiring Software and Web Developer
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/dys-2.png" width="800" height="800" alt="dys" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Hello there, I'm a Computing Science student and aspiring Web Developer with a design-oriented approach to software engineering, 
+              focused on developing captivating web and app solutions.
+              I'm passionate about Web developments and computer hardware, aiming to improve the world through technology.
+            </p>
+
+            <a href="./assets/CV.pdf" class="btn has-before" target="_blank" rel="noopener noreferrer">
+              <span class="span">Download CV</span>
+
+              <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="service" id="about">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                A glimpse into me
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">About</h2>
+            </div>
+
+            <p class="section-text">
+              I'm Dysfred, hailing from the Philippines, raised in the UAE. I've loved tinkering with computers ever since I was little. 
+              I've been coding for 3 years, polishing my skills one compilation at a time.
+              I specialize on Java Programming, and possess as well a wide array of software and creative skills.
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="code-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Java Programming</h3>
+
+                  <p class="card-text">
+                    I mainly program in Java, utilizing the lessons throughout university, and 
+                    my own self study.
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <a href="#about" class="layer-link"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    <ion-icon name="logo-css3"></ion-icon>
+                    <ion-icon name="logo-javascript"></ion-icon>    
+                    
+                  </div>
+
+                  <h3 class="h3 card-title">Website Design</h3>
+
+                  <p class="card-text">
+                    Proficiency in HTML, CSS, & JavaScript Web design functionalities. 
+                    Taking into account both UI and UX intricacies.
+
+
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                  <a href="#about" class="layer-link"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="logo-microsoft"></ion-icon>
+                    <ion-icon name="logo-google"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Microsoft Office Suite & Google Workspace</h3>
+
+                  <p class="card-text">
+                    Intermediate knowledge on both MS Applications and Google counterparts.
+                    Allowing for flexibility and adaptability.
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                  <a href="#about" class="layer-link"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    <ion-icon name="images-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Graphic Design</h3>
+
+                  <p class="card-text">
+                    I also have foundational background in Graphic Design, utilizing
+                    online tools such as: Canva and Premiere Pro enabling me to be flexible on any workplace given scenario.
+                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                  <a href="#about" class="layer-link"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="file-tray-full-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Database Management</h3>
+
+                  <p class="card-text">
+                    Capabilities in Database Management Systems: mySQL & Php
+                  </p>
+
+                  <span class="text-lg card-number">05</span>
+
+                  <a href="#about" class="layer-link"></a>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #Contacts
+      -->
+
+      <section class="section skills" id="connect">
+        <div class="container">
+
+          <p class="section-subtitle">My socials</p>
+
+          <h2 class="h2 section-title">Connect with me.</h2>
+
+          <div class="skills-wrapper">
+
+            <div>
+              <p class="section-text">
+                In addition to coding, I also enjoy surveying the web for exciting and unique ideas and content.
+                Let's connect and feel free to drop a message if you got any questions or queries. 
+              </p>
+
+              <p class="section-text">
+                When I'm not next to my computer, You'll probably catch me at a basketball court cooking, 
+                playing video games, or at Church playing my guitar.
+              </p>
+
+              <a href="#" class="btn has-before">dysfredorbiso@gmail.com</a>
+            </div>
+
+            <div>
+
+              <ul class="skills-list">
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">LinkedIn</p>
+      
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/dysfred-orbiso-81397a259/" class="social-link"  target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">GitHub</p>
+      
+                  </div>
+
+                  <a href="https://github.com/DysAndrie" class="social-link"  target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+
+                </li>
+               
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Instagram</p>
+      
+                  </div>
+
+                  <a href="https://www.instagram.com/dys_fred/" class="social-link"  target="_blank" rel="noopener noreferrer">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+
+                </li>
+
+              
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="portfolio" id="projects">
+
+        <div class="title-wrapper container">
+
+          <div>
+            <p class="section-subtitle" id="portfolio-label">My Crafts</p>
+
+            <h2 class="h2 section-title">Projects</h2>
+          </div>
+
+          <p class="section-text">
+            Welcome to my collection of web components and designs. This is my creative playground, 
+            where I explore and experiment with innovative ideas and new technologies.
+            
+          </p>
+
+        </div>
+
+        <div class="slider" data-slider>
+
+          <ul class="slider-container" data-slider-container>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/project-1.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">eCSentials <br> University Website</h3>
+
+                  <p class="card-text">UX and UI Design</p>
+                </div>
+
+                <a href="https://dysandrie.github.io/WebsiteProject-eCSentials/" class="layer-link"  target="_blank" rel="noopener noreferrer"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/project-2.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Earn to Drive</h3>
+
+                  <p class="card-text">2D Game Development</p>
+                </div>
+
+                <a href="https://github.com/DysAndrie/Java2D-Earn-to-Drive" class="layer-link" target="_blank" rel="noopener noreferrer"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/resume.png" width="600" height="600" loading="lazy" alt="presume"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Web Resume</h3>
+
+                  <p class="card-text">Personal Online Resume</p>
+                </div>
+
+                <a href="https://github.com/DysAndrie/dys.resume/" class="layer-link" target="_blank" rel="noopener noreferrer"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/project-4.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">USTube <br> YouTube Clone</h3>
+
+                  <p class="card-text">HTML Website Mockup</p>
+                </div>
+
+                <a href="https://dysandrie.github.io/Youtube-Clone/" class="layer-link" target="_blank" rel="noopener noreferrer"></a>
+
+              </div>
+            </li>
+
+            <li class="slider-item">
+              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
+
+                <img src="./assets/images/project-5.png" width="600" height="600" loading="lazy" alt="portfolio"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Stussy Store Menu</h3>
+
+                  <p class="card-text">UI Web Design</p>
+                </div>
+
+                <a href="https://dysandrie.github.io/Shop-Menu/" class="layer-link" target="_blank" rel="noopener noreferrer"></a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="slider-controls">
+            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+
+            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+              <div class="line"></div>
+              <div class="arrow"></div>
+            </button>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">
+            MY COMMENTARIES
+          </p>
+
+          <h2 class="h2 section-title">Blog</h2>
+          <p> Come check out my articles as I occasionally write about the web, events, programming, artificial intelligence, productivity, and more. 
+          </p>
+
+          <br>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
+                  <img src="./assets/images/blog-1.1.png" width="700" height="470" loading="lazy"
+                    alt="gisec2023" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <time class="time" datetime="2023-03-15">
+                    <span class="span text-lg">15</span>
+                    March 2023
+                  </time>
+
+                  <div>
+                    <h3 class="h3 card-title">UoS RAK @ GISEC 2023</h3>
+
+                    <p class="card-text">
+                      Hundreds of tech companies in the cybersecurity space collaborated to form under one roof sharing information
+                      and innovations. This past 14th-16th of March marked the inauguration and reopening
+                      of GISEC Global 2023.
+                    </p>
+
+                    <a href="https://www.stir.ae/industry-spectra-it-23" class="btn has-before" target="_blank" rel="noopener noreferrer">
+                      <span class="span">Read more</span>
+
+                      <ion-icon name="book-outline"></ion-icon>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+          <!-- BACK TO TOP BUTTON 
+     Code taken inspiration from: https://www.youtube.com/watch?v=fYGe-SuFAHU -->
+  <li>
+    <a href="#home" class="back-to-top">
+      <ion-icon name="caret-up-circle-outline"></ion-icon>
+    </a>
+  </li>
+
+
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Reach me on</p> 
+        </li>
+
+        <li>
+          <a href="mailto:dysfredorbiso@gmail.com" class="footer-link">dysfredorbiso@gmail.com
+          
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Currently based in:</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Muhaisnah, Dubai — United Arab Emirates</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.linkedin.com/in/dysfred-orbiso-81397a259/" class="social-link"  target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/DysAndrie" class="social-link"  target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/dys_fred/" class="social-link"  target="_blank" rel="noopener noreferrer">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
